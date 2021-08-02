@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:src="@drawable/applogo"
+        android:id="@+id/login_app_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_phone_number_input"
+        android:layout_below="@+id/login_app_logo"
+        android:background="@drawable/input_design"
+        android:padding="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="Phone Number"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="#20E8AF"
+        android:textStyle="bold"
+        android:textSize="17sp"/>
+
+    <EditText
+        android:id="@+id/login_password_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_phone_number_input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/input_design"
+        android:hint="Password"
+        android:textColor="@color/white"
+        android:padding="20dp"
+        android:textColorHint="#20E8AF"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout1"
+        android:orientation="horizontal"
+        android:layout_below="@+id/login_password_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        >
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="385dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="98dp"
+        android:background="@drawable/botton"
+        android:padding="20dp"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textSize="18sp">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/admin_panel_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="53dp"
+        android:text="I am in admin?"
+        android:textColor="#1AF1D1"
+        android:textSize="20sp"
+        android:textStyle="bold">
+
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/not_admin_panel_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="231dp"
+        android:layout_marginBottom="49dp"
+        android:text="I am not in admin?"
+        android:textColor="#1AF1D1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="invisible">
+
+
+    </TextView>
+
+    <com.rey.material.widget.CheckBox
+        android:id="@+id/remember_me_chkb"
+        style="@style/Material.Drawable.CheckBox"
+        android:layout_width="147dp"
+        android:layout_height="31dp"
+        android:layout_below="@+id/login_password_input"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="182dp"
+        android:text="Remember me"
+        android:textColor="#1AF1B4"
+        android:textSize="20sp">
+
+
+    </com.rey.material.widget.CheckBox>
+
+    <TextView
+        android:id="@+id/forget_password_link"
+        android:layout_width="174dp"
+        android:layout_height="38dp"
+        android:layout_alignTop="@+id/remember_me_chkb"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="176dp"
+        android:text="Forget password"
+        android:textColor="#1AF1D1"
+        android:textSize="20sp"
+        android:textStyle="bold">
+
+
+    </TextView>
+
+
+
+
+</RelativeLayout>
